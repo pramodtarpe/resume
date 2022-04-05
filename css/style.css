@@ -1,0 +1,76 @@
+
+@import "skills.css";
+@import "education.css";
+@import "contact.css";
+@import "navbar.css";
+@import "font.css";
+
+body{
+    min-width: 300px;
+    font-family: montserrat;
+}
+.heading{
+    min-height: 75vh;
+    height: auto;
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,1)), url("../images/b2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+.about-section{
+    color:white; 
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+.text-center{
+    text-align: center;
+}
+.big-text{
+    color: white;
+    font-size: 5rem;
+}
+.text-margin{
+    margin: 2rem;
+    position: relative;
+    top: 35%;
+}
+.social{
+    margin: 2rem auto;
+}
+.social a{
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+.social a:hover{
+    border-bottom: 2px solid white;
+    font-weight: bolder;
+    transition: color .5s,font-size .5s,padding .5s;
+}
+
+.section-title{
+    border-bottom: 2px solid black;
+    width: 60%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.hyperlink {
+    text-decoration: none;
+}
+.hyperlink:active {
+    color: blue;
+}
+
+@media screen and (min-width:600px) {
+    .section-title{
+        width: 40%;
+    }
+}

@@ -1,0 +1,107 @@
+
+.navbar-container {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px;
+}
+.navbar-container li{
+    margin: 15px;
+}
+.navbar-container li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    margin: 1rem;
+}
+.navbar-container li a:hover{
+    text-shadow: 2px 2px 10px white;
+    border-bottom : 2px solid white;
+    transition: color 200ms;
+    transition: text-shadow 100ms, border-bottom 100ms;
+}
+
+.hamburger-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.hamburger-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 5px;
+    width: 25px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.hamburger-bar::after, .hamburger-bar::before {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 25px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.hamburger-bar::before {
+    transform: translateY(-10px);
+}
+.hamburger-bar::after {
+    transform: translateY(10px);
+}
+
+.hamburger-container .navbar-open.hamburger-bar{
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.hamburger-container .navbar-open.hamburger-bar::before{
+    transform: rotate(45deg) translate(25px, -30px);
+}
+.hamburger-container .navbar-open.hamburger-bar::after{
+    transform: rotate(-45deg) translate(30px, 25px);
+}
+
+.navbar-collapse {
+    height: auto;
+    transition: 2s;
+}
+
+@media screen and (min-width:600px) {
+    .hamburger-container {
+        display: none;
+    }
+}
+@media screen and (max-width:599px) {
+    .navbar {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: left;
+    }
+    .navbar-container {
+        height: 0vh;
+        display: block;
+        transition: 200ms ease;
+    }
+    .navbar-collapse {
+        height: 20rem;
+        transition: 200ms;
+    }
+    .navbar-container li {
+        text-align: center;
+    }
+}

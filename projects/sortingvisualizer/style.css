@@ -1,0 +1,81 @@
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: lightpink;
+    font-family: monospace;
+    min-width: 600px;
+}
+#bar-container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 450px;
+}
+.bar{
+    margin-left: 1px;
+    width: 50px;
+    background-color: red;
+    transition: 0.3s all linear;
+}
+.bar p{
+    /* margin: 0; */
+    font-size: 10px;
+    color: black;
+    text-align: center;
+    transform: rotate(-90deg) translateX(50px);
+}
+#dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    background-color: white;
+}
+/* SLIDER */
+.slide-container{
+    font-size: 1.5rem;
+    display: flex;
+    width: 600px;
+}
+.slider{
+    cursor: pointer;
+    width: 100%;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slide-box{
+    margin: 5px;
+}
+
+/*BUTTON*/
+.btn{
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    border: 0;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    display: inline;
+    width: 130px;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
+.btn:hover{
+    background-color: darkolivegreen;
+}
+.btn:active{
+    transform: translate(2px,2px);
+}
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bar-value{
+    text-align: center;
+}

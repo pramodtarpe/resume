@@ -1,0 +1,32 @@
+
+.contact-background{
+    height: 10rem;
+    background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url("../images/b1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.contact-container{
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    opacity: .5;
+    background: black;
+    display: block;
+    min-width : 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: right;
+    font-size: 1.5rem;
+}
+.foot-details{
+    color:white;
+    margin: 1rem;
+}

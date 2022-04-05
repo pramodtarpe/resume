@@ -1,0 +1,50 @@
+
+/* SKILLS */
+#skills-id{
+    margin-top: 5rem;
+}
+.skills{
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.skill-container{
+    overflow: hidden;
+    position: relative;
+    margin: 2rem;
+    border-radius: 10rem;
+    border: 2px solid black;
+    height: 3rem;
+    width: 30%;
+}
+.skill-percent{
+    height: inherit;
+    border-radius: 10rem 0 0 10rem;
+}
+.skill-name{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+    font-weight: bolder;
+    margin: auto auto auto 20px;
+    color: black;
+}
+.percent-display{
+    font-weight: bolder;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width:600px){
+    .skill-container{
+        width: 80%;
+        margin : 1rem;
+    }
+}
